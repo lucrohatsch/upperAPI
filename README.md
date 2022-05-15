@@ -4,7 +4,8 @@ Esta API fué desarrollada con la simple finalidad de dar solución al ejercicio
 UpperAPI está desarrollada con el framework fastAPI y utiliza una base de datos sqlite.
 
 ## Demo
-Si ud quiere probar la demo puede ingresar aqui
+Si ud quiere probar la demo puede ingresar [aqui](http://kalinka.cultivoiot.com.ar:4040/docs#).
+
 Para la autenticación debera utilizar los siguientes valores:
 
 ```
@@ -19,7 +20,7 @@ password:demo
     [https://github.com/lucrohatsch/upperAPI.git](https://github.com/lucrohatsch/upperAPI.git)
 
 
-* Crear el archivo .env con las siguientes variables
+* Crear en el directorio src el archivo .env con las siguientes variables
 ```
 USR="usuario"
 PSW="contraseña"
