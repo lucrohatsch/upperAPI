@@ -4,6 +4,7 @@ from db_conect import create_db, session_db
 from model import Registers
 from schemas import _GetRegiter, _PostRegiter, _ReturnId
 import os
+import logging
 
 app = FastAPI()
 create_db()
@@ -42,6 +43,7 @@ def read_root(register: _PostRegiter, my_target_field: str, token: str = Depends
         ss.commit()
         ss.refresh(deb_register)
         result={"id":deb_register.id}
+        logging.info(result)
         return {"id":deb_register.id}
     else:
         raise HTTPException(
